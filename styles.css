@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center; /* Centers the grid within its container */
+}
+
+.letter-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid #555;
+    text-transform: uppercase;
+    color: white; /* Ensures text color is white */
+}
+
+.correct {
+    background-color: green;
+}
+
+.present {
+    background-color: darkgoldenrod;
+}
+
+.absent {
+    background-color: grey;
+}
+
+#guess-input {
+    width: 120px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+#fireworks-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: block;
+    z-index: 9999;  /* Ensures it appears above other content */
+}

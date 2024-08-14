@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle with Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Wordle with Friends!</h1>
+        <p id="game-status">You have 6 attempts to guess the word.</p>
+        <div id="game-board"></div>
+        <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess">
+        <button id="submit-guess">Submit Guess</button>
+        <p id="error-message"></p>
+        <canvas id="fireworks-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
